@@ -1,8 +1,8 @@
 // bootloader configuration file
 #pragma once
 
-#define BOARD_CONFIG_HW_NAME "com.hex.here"
-#define BOARD_CONFIG_HW_MAJOR_VER 1
+#define BOARD_CONFIG_HW_NAME "com.hex.here+"
+#define BOARD_CONFIG_HW_MAJOR_VER 2
 #define BOARD_CONFIG_HW_MINOR_VER 0
 
 extern int _otp;
@@ -17,6 +17,7 @@ extern int _otp_end;
 }
 
 #define BOARD_CONFIG_I2C_BOOT_TRIGGER
+#define BOARD_CONFIG_HERE_LEDS
 
 #define BOARD_CONFIG_CAN_RX_GPIO_PORT GPIOA
 #define BOARD_CONFIG_CAN_RX_GPIO_PORT_RCC RCC_GPIOA
@@ -28,6 +29,6 @@ extern int _otp_end;
 #define BOARD_CONFIG_CAN_TX_GPIO_ALTERNATE_FUNCTION GPIO_AF9
 
 #define BOARD_CONFIG_MCU_STM32F3
-#define BOARD_CONFIG_OSC_HSE_8MHZ
+#define BOARD_CONFIG_OSC_HSE_24MHZ
 
 

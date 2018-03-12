@@ -4,7 +4,7 @@ LIBOPENCM3_DIR := modules/libopencm3
 LIBCANARD_DIR := modules/libcanard
 LDSCRIPT := $(COMMON_DIR)/configs/stm32f302k8/app.ld
 BL_LDSCRIPT := $(COMMON_DIR)/configs/stm32f302k8/bl.ld
-BOARD_CONFIG_HEADER := boards/com.hex.here_1.0/board.h
+BOARD_CONFIG_HEADER := boards/com.hex.here_2.0/board.h
 
 ARCH_FLAGS := -mthumb -mcpu=cortex-m4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
 
